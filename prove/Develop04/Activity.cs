@@ -7,10 +7,12 @@ public class Activity
     private int _seconds;
     private Stopwatch _startTime = new Stopwatch();
     private Stopwatch _stopwatch = new Stopwatch();
+    protected Random random = new Random();
     public Activity(string activityType, string activityDescription)
     {
         _activityType = activityType;
         _activityDescription = activityDescription;
+        _startTime.Start();
     }
     public void Welcome()
     {

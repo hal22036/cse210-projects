@@ -5,7 +5,6 @@ public class ListingActivity : Activity
     private List<string> _listingQuestions = LoadFile("ListingPrompt.txt");
     private List<string> _listingAnswers = new List<string>();
     private int _listNumber;
-    private Random random = new Random();
     public ListingActivity(string activityType, string activityDescription) : base(activityType, activityDescription){}
     public void ListAnswers(int number)
     {
