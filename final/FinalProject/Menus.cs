@@ -6,7 +6,6 @@ public class Menus
         };
     public int MainMenu()
     {
-        Console.Clear();
         List<string> mainMenu = new List<string>{
             "Terrestrial World", "Aquatic World", "Aerial World", "Interesting Random Facts", "Credits", "Leave the Zoo"
         };
@@ -14,31 +13,33 @@ public class Menus
     }
     public void VisitAnimal(Animal animal)
     {
-        Option = Menu(animalMenu);
-        switch (Option)
+        while (Menu(animalMenu) != 6)
         {
-            case 1:
-                Console.WriteLine();
-                animal.DisplayAnimal();
-                break;
-            case 2:
-                Console.WriteLine();
-                animal.DisplaySound();
-                break;
-            case 3:
-                Console.WriteLine();
-                animal.FeedAnimal();
-                break;
-            case 4:
-                Console.WriteLine();
-                animal.PetAnimal();
-                break;
-            case 5:
-                Console.WriteLine();
-                animal.AnimalFacts();
-                break;
-            default:
-                break;
+            switch (Option)
+            {
+                case 1:
+                    Console.WriteLine();
+                    animal.DisplayAnimal();
+                    break;
+                case 2:
+                    Console.WriteLine();
+                    animal.DisplaySound();
+                    break;
+                case 3:
+                    Console.WriteLine();
+                    animal.FeedAnimal();
+                    break;
+                case 4:
+                    Console.WriteLine();
+                    animal.PetAnimal();
+                    break;
+                case 5:
+                    Console.WriteLine();
+                    animal.AnimalFacts();
+                    break;
+                default:
+                    break;
+            }
         }
     }
     public int TerrestrialMenu()
@@ -47,7 +48,7 @@ public class Menus
             "Cow", "Elephant", "Horse", "Monkey", "Pig", "Rabbit", "Main Menu"
         };
         Console.WriteLine("\nWelcome to the Terrestrial world!");
-        Console.WriteLine("\n\n\"Terrestrial animals are animals which live on land. These animals have developed specific features that help them to survive and live on land. Most of these animals have legs, which help them to run fast. They have to run fast to catch their prey or to protect themselves from becoming prey of other animals (predators). They breathe through well-developed lungs. Some terrestrial animals have sharp teeth with pointed canines and sharp claws to catch their prey. These animals have well developed sense organ, which helps them to look for food in the dark night or by mere movement of their prey. These special adaptive features are common to most of the terrestrial animals. Condition on the land is not uniform everywhere. It varies from place to place. Mountain region and the Polar regions are very cold. Animals living there have developed several adaptations to adjust to these climatic conditions. Polar bear living in the polar region and Yak living at high mountain range have thick coat of fur on their body, which protects them from the chilling cold. Animals like Walrus, Seals and Penguins also live in freezing conditions. These animals have special adaptation called blubber (thick layer of fat).\"");
+        Console.WriteLine("\n\n\"Terrestrial animals are animals which live on land. These animals have developed specific features that help them to survive and live on land. Most of these animals have legs, which help them to run fast. They have to run fast to catch their prey or to protect themselves from becoming prey of other animals (predators). They breathe through well-developed lungs.");
         Console.WriteLine("\nCurrent animals to visit:");
         return Menu(terrestrial);
     }
@@ -57,7 +58,7 @@ public class Menus
             "Duck", "Eagle", "Parrot", "Main Menu"
         };
         Console.WriteLine("\nWelcome to the Aerial world!");
-        Console.WriteLine("\n\n\"Aerial animals are those which spent a greater part of their lives in the air. Flying is the main characteristic of this group. Most of the adaptation of aerial animals revolve around their flying. Most of the birds and bats belong to this group. The body of the birds is made light with hollow light bones. Their front legs (for limbs) are modified into wings, which help them to fly. Their bodies are covered with feathers. They have well developed lungs to breathe air. They have sharp claws to hold branches. Claws of eagle are specially designed to catch prey. Birds living in cold places like Siberia come to India during winter season as the climatic condition there is very harsh and also there is scarcity of food. Siberian crane travel thousands of miles and come to India in search of food, warmth and to give birth to their young ones. They travel in large groups. At the end of the winter they travel back to their original home land. This mass movement of the birds from their home to the comfort region in the harsh climatic condition and back is called migration.\"");
+        Console.WriteLine("\n\n\"Aerial animals are those which spent a greater part of their lives in the air. Flying is the main characteristic of this group. Most of the adaptation of aerial animals revolve around their flying. Most of the birds and bats belong to this group. The body of the birds is made light with hollow light bones. Their front legs (for limbs) are modified into wings, which help them to fly. Their bodies are covered with feathers. They have well developed lungs to breathe air. They have sharp claws to hold branches. Claws of eagle are specially designed to catch prey.\"");
         Console.WriteLine("\nCurrent animals to visit:");
         return Menu(aerial);
     }
@@ -67,7 +68,7 @@ public class Menus
             "Fish", "Frog", "Turtle", "Main Menu"
         };
         Console.WriteLine("\nWelcome to the Aquatic world!");
-        Console.WriteLine("\n\n\"Animals living in water are called aquatic animals. All aquatic animals are not found in the same type of water. Many kinds of fish, snails, snake, are found in fresh water i.e. streams, lakes etc. Animals like dolphins, sharks, curbs, seals starfish, jelly are found in salty water i.e. the sea and oceans. Most of the aquatic animals breathe air dissolved in water, through organs called gills. Animals like dolphins and whale breathe through their lungs. Aquatic animals have special body shape like spindle shaped, flattened or disc shape. Dog fish, spindle shaped sting ray has a flattened shape. Aquatic animals swim in water. They have special organs called fins or paddles, which help them in swimming.\"");
+        Console.WriteLine("\n\n\"Animals living in water are called aquatic animals. All aquatic animals are not found in the same type of water. Most of the aquatic animals breathe air dissolved in water, through organs called gills. Animals like dolphins and whale breathe through their lungs. Aquatic animals have special body shape like spindle shaped, flattened or disc shape. Aquatic animals swim in water.\"");
         Console.WriteLine("\nCurrent animals to visit:");
         return Menu(aquatic);
     }
@@ -81,6 +82,7 @@ public class Menus
         }
         Console.Write("Select a choice from the menu: ");
         Option = int.Parse(Console.ReadLine());
+        Console.Clear();
         return Option;
     }
     public void LoadRandomFacts()

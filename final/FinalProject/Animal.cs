@@ -22,90 +22,91 @@ public abstract class Animal
     public void PetAnimal()
     {
         Console.Clear();
+        Console.CursorVisible = false;
         int startLine = Console.CursorTop;
         string[] frames = {"""
                      ___   ___
-                     OOO   OOO|
-            __       OOO   OOO|
-            OOO      OOO   OOO|
-             \OO\    |OO\  |OOO
-              \OO|\  OOO\  |OOO
-               \OOO\  OOO  |OOO          OO
-          /O    \OOO\ |OOOOOOOO        /OOO|
-          \OOO   \OOOOOOOOOOOOO       /OOOO
-            OOOOO /OOOOOOOOOOOOO\  __/OOOO
-              \OOOOOOOOOOOOOOOOOOOOOOOOl/
-                “\OOOOOOOOOOOOOOOOOOOOO/
-                 ''\OOOOOOOOOOOOOOOOOOO/
-                   \OOOOOOOOOOOOOOOOO/
-                    \OOOOOOOOOOOOOOO
-                     ""OOOOOOOOOOO
-                       ""OOOOOOOO|
-                        |OOOOOOOO|
-                        |OOOOOOOO|
+                     OOO   OOO|        
+            __       OOO   OOO|        
+            OOO      OOO   OOO|        
+             \OO\    |OO\  |OOO        
+              \OO|\  OOO\  |OOO        
+               \OOO\  OOO  |OOO          OO         
+          /O    \OOO\ |OOOOOOOO        /OOO|         
+          \OOO   \OOOOOOOOOOOOO       /OOOO           
+            OOOOO /OOOOOOOOOOOOO\  __/OOOO         
+              \OOOOOOOOOOOOOOOOOOOOOOOOl/        
+                “\OOOOOOOOOOOOOOOOOOOOO/        
+                 ''\OOOOOOOOOOOOOOOOOOO/        
+                   \OOOOOOOOOOOOOOOOO/         
+                    \OOOOOOOOOOOOOOO         
+                     ""OOOOOOOOOOO        
+                       ""OOOOOOOO|       
+                        |OOOOOOOO|       
+                        |OOOOOOOO|             
         """,
         """
-                       ___ ___
-                       OOO OOO|
-                 __    OOO OOO|
-                 OOO   OOO OOO|
-                 |OO|  |OO\|OOO
-                 |OO|| OOO\|OOO
-                 |OOO|  OOO|OOO       OO
-            |OO  |OOO\|OOOOOOOO     /OOO|
-            |OOO \OOOOOOOOOOOOO    /OOOO
-             OOOOOOOOOOOOOOOOOO\__/OOOO/
-              \OOOOOOOOOOOOOOOOOOOOOOOOl
-                “\OOOOOOOOOOOOOOOOOOOOO|
-                 |OOOOOOOOOOOOOOOOOOOO/
-                   \OOOOOOOOOOOOOOOOO/
-                    \OOOOOOOOOOOOOOO
-                     ""OOOOOOOOOOO
-                       ""OOOOOOOO|
-                        |OOOOOOOO|
-                        |OOOOOOOO|
+                       ___ ___       
+                       OOO OOO|        
+                 __    OOO OOO|       
+                 OOO   OOO OOO|       
+                 |OO|  |OO\|OOO        
+                 |OO|| OOO\|OOO       
+                 |OOO|  OOO|OOO       OO        
+            |OO  |OOO\|OOOOOOOO     /OOO|       
+            |OOO \OOOOOOOOOOOOO    /OOOO       
+             OOOOOOOOOOOOOOOOOO\__/OOOO        
+              \OOOOOOOOOOOOOOOOOOOOOOO        
+              “\OOOOOOOOOOOOOOOOOOOOO|       
+                |OOOOOOOOOOOOOOOOOOOO/       
+                  \OOOOOOOOOOOOOOOOO/         
+                   \OOOOOOOOOOOOOOO        
+                    ""OOOOOOOOOOO          
+                      ""OOOOOOOO|                    
+                       |OOOOOOOO|                  
+                       |OOOOOOOO|                                 
         """,
         """
-                     ___   ___
-                     OOO   OOO|
-            __       OOO   OOO|
-            OOO      OOO   OOO|
-             \OO\    |OO\  |OOO
-              \OO|\  OOO\  |OOO
-               \OOO\  OOO  |OOO          OO
-          /O    \OOO\ |OOOOOOOO        /OOO|
-          \OOO   \OOOOOOOOOOOOO       /OOOO
-            OOOOO /OOOOOOOOOOOOO\  __/OOOO
-              \OOOOOOOOOOOOOOOOOOOOOOOOl/
-                “\OOOOOOOOOOOOOOOOOOOOO/
-                 ''\OOOOOOOOOOOOOOOOOOO/
-                   \OOOOOOOOOOOOOOOOO/
-                    \OOOOOOOOOOOOOOO
-                     ""OOOOOOOOOOO
-                       ""OOOOOOOO|
-                        |OOOOOOOO|
-                        |OOOOOOOO|
+                     ___   ___         
+                     OOO   OOO|       
+            __       OOO   OOO|       
+            OOO      OOO   OOO|       
+             \OO\    |OO\  |OOO      
+              \OO|\  OOO\  |OOO        
+               \OOO\  OOO  |OOO          OO        
+          /O    \OOO\ |OOOOOOOO        /OOO|       
+          \OOO   \OOOOOOOOOOOOO       /OOOO        
+            OOOOO /OOOOOOOOOOOOO\  __/OOOO        
+              \OOOOOOOOOOOOOOOOOOOOOOOOl/           
+                “\OOOOOOOOOOOOOOOOOOOOO/           
+                 ''\OOOOOOOOOOOOOOOOOOO/           
+                   \OOOOOOOOOOOOOOOOO/        
+                    \OOOOOOOOOOOOOOO        
+                     ""OOOOOOOOOOO          
+                       ""OOOOOOOO|                  
+                        |OOOOOOOO|                  
+                        |OOOOOOOO|                                
         """,
         """
-                       ___ ___
-                       OOO OOO|
-                 __    OOO OOO|
-                 OOO   OOO OOO|
-                 |OO|  |OO\|OOO
-                 |OO|| OOO\|OOO
-                 |OOO|  OOO|OOO       OO
-            |OO  |OOO\|OOOOOOOO     /OOO|
-            |OOO \OOOOOOOOOOOOO    /OOOO
-             OOOOOOOOOOOOOOOOOO\__/OOOO/
-              \OOOOOOOOOOOOOOOOOOOOOOOOl
-                “\OOOOOOOOOOOOOOOOOOOOO|
-                 |OOOOOOOOOOOOOOOOOOOO/
-                   \OOOOOOOOOOOOOOOOO/
-                    \OOOOOOOOOOOOOOO
-                     ""OOOOOOOOOOO
-                       ""OOOOOOOO|
-                        |OOOOOOOO|
-                        |OOOOOOOO|
+                       ___ ___        
+                       OOO OOO|       
+                 __    OOO OOO|         
+                 OOO   OOO OOO|       
+                 |OO|  |OO\|OOO       
+                 |OO|| OOO\|OOO      
+                 |OOO|  OOO|OOO       OO       
+            |OO  |OOO\|OOOOOOOO     /OOO|       
+            |OOO \OOOOOOOOOOOOO    /OOOO      
+             OOOOOOOOOOOOOOOOOO\__/OOOO       
+              \OOOOOOOOOOOOOOOOOOOOOOO      
+              “\OOOOOOOOOOOOOOOOOOOOO|       
+                |OOOOOOOOOOOOOOOOOOOO/       
+                  \OOOOOOOOOOOOOOOOO/        
+                   \OOOOOOOOOOOOOOO        
+                    ""OOOOOOOOOOO        
+                      ""OOOOOOOO|                
+                       |OOOOOOOO|                
+                       |OOOOOOOO|                               
         """};
         foreach (string frame in frames)
         {
@@ -113,6 +114,8 @@ public abstract class Animal
             Thread.Sleep(700);
             Console.SetCursorPosition(0, startLine);
         }
+        Console.Clear();
+        Console.CursorVisible = true;
         Console.WriteLine($"\n\nThank you for petting the {AnimalName}!");
     }
     public abstract void FeedAnimal();

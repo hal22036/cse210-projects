@@ -1,25 +1,25 @@
 public class Parrot : Animal
 {
-    public Parrot() : base("Parrot", "Parrots squawk and talk. They can mimick actual words and sounds around them.", "Parrot's food intake consists of seeds, nut, fruits, vegetables, leafy vegetation, grasses and occasionally insects.", "Parrots have skin and lits of feathers that cover their body.", "{Parrots have 2 feet they walk on and 2 wings that they fly with.}") { }
+    public Parrot() : base("Parrot", "Parrots squawk and talk. They can mimick actual words and sounds around them.", "Parrot's food intake consists of seeds, nut, fruits, vegetables, leafy vegetation, grasses and occasionally insects.", "Parrots have skin and lits of feathers that cover their body.", "Parrots have 2 feet they walk on and 2 wings that they fly with.") { }
     public override void DisplayAnimal()
     {
         Console.Clear();
         Console.WriteLine(""" 
-                                 .
-                                | \/|
-        (\   _                  ) )|/|
-            (/            _----. /.'.'
+                                   .
+                                  | \/|
+          (\   _                  ) )|/|
+              (/            _----. /.'.'
         .-._________..      .' @ _\  .'   
         '.._______.   '.   /    (_| .')
-        '._____.  /   '-/      | _.' 
-        '.______ (         ) ) \
-            '..____ '._       )  )
+          '._____.  /   '-/      | _.' 
+           '.______ (         ) ) \
+             '..____ '._       )  )
                 .' __.--\  , ,  // ((
-                '.'  mrf|  \/   (_.'(  
+                '.'     |  \/   (_.'(  
                         '   \ .' 
-                        \   (
-                        \   '.
-                        \ \ '.)
+                         \   (
+                          \   '.
+                           \ \ '.)
                             '-'-'
         """);
     }

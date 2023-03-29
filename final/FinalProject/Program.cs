@@ -16,48 +16,34 @@ class Program
                         {
                             case 1:
                                 Cow cow = new Cow();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(cow);
-                                }
+                                menu.VisitAnimal(cow);
                                 break;
                             case 2:
                                 Elephant elephant = new Elephant();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(elephant);
-                                }
+                                menu.VisitAnimal(elephant);
                                 break;
                             case 3:
                                 Horse horse = new Horse();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(horse);
-                                }
+                                menu.VisitAnimal(horse);
                                 break;
                             case 4:
                                 Monkey monkey = new Monkey();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(monkey);
-                                }
+                                menu.VisitAnimal(monkey);
                                 break;
                             case 5:
                                 Pig pig = new Pig();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(pig);
-                                }
+                                menu.VisitAnimal(pig);
                                 break;
                             case 6:
+                                menu.Option = 0;
                                 Rabbit rabbit = new Rabbit();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(rabbit);
-                                }
+                                menu.VisitAnimal(rabbit);
                                 break;
                             default:
-                                Console.WriteLine("\nPlease try again.");
+                                if (menu.Option != 7)
+                                {
+                                    Console.WriteLine("\nPlease try again.");
+                                }
                                 break;
                         }
                     }
@@ -69,27 +55,21 @@ class Program
                         {
                             case 1:
                                 Fish fish = new Fish();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(fish);
-                                }
+                                menu.VisitAnimal(fish);
                                 break;
                             case 2:
                                 Frog frog = new Frog();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(frog);
-                                }
+                                menu.VisitAnimal(frog);
                                 break;
                             case 3:
                                 Turtle turtle = new Turtle();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(turtle);
-                                }
+                                menu.VisitAnimal(turtle);
                                 break;
                             default:
-                                Console.WriteLine("\nPlease try again.");
+                                if (menu.Option != 4)
+                                {
+                                    Console.WriteLine("\nPlease try again.");
+                                }
                                 break;
                         }
                     }
@@ -101,27 +81,21 @@ class Program
                         {
                             case 1:
                                 Duck duck = new Duck();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(duck);
-                                }
+                                menu.VisitAnimal(duck);
                                 break;
                             case 2:
                                 Eagle eagle = new Eagle();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(eagle);
-                                }
+                                menu.VisitAnimal(eagle);
                                 break;
                             case 3:
                                 Parrot parrot = new Parrot();
-                                while (menu.Option != 6)
-                                {
-                                    menu.VisitAnimal(parrot);
-                                }
+                                menu.VisitAnimal(parrot);
                                 break;
                             default:
-                                Console.WriteLine("\nPlease try again.");
+                                if (menu.Option != 4)
+                                {
+                                    Console.WriteLine("\nPlease try again.");
+                                }
                                 break;
                         }
                     }
